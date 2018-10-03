@@ -1,8 +1,6 @@
-03 Oct 2018 22:23:27,625  INFO [http-bio-8080-exec-5]  (com.webratio.struts.actions.AbstractWRAction:53) - [33738D59395FF8F6780ABEBF29D5A47A][/operation_scu1]Operation action execution [first operation id=scu1] done in 1917 ms
-03 Oct 2018 22:23:27,637  INFO [http-bio-8080-exec-5]  (com.webratio.struts.actions.AbstractWRAction:53) - [33738D59395FF8F6780ABEBF29D5A47A][page2]Page action pre-redirect execution [id=page2] done in 5 ms
-03 Oct 2018 22:23:27,761  INFO [http-bio-8080-exec-7]  (com.webratio.struts.actions.AbstractWRAction:53) - [33738D59395FF8F6780ABEBF29D5A47A][page2]Page action execution [id=page2] done in 121 ms
-03 Oct 2018 22:23:30,994  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [B72F68472157DDDD369696E1E8A239AF][/operation_scu1]Operation action execution [first operation id=scu1] done in 507 ms
-03 Oct 2018 22:23:30,996  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [B72F68472157DDDD369696E1E8A239AF][page2]Page action pre-redirect execution [id=page2] done in 1 ms
-03 Oct 2018 22:23:31,006  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [B72F68472157DDDD369696E1E8A239AF][page2]Page action execution [id=page2] done in 4 ms
-03 Oct 2018 22:23:33,585  INFO [http-bio-8080-exec-4]  (com.webratio.struts.actions.AbstractWRAction:53) - [B72F68472157DDDD369696E1E8A239AF][page2]Page action execution [id=page2] done in 5 ms
-03 Oct 2018 22:23:34,832  INFO [http-bio-8080-exec-4]  (com.webratio.struts.actions.AbstractWRAction:53) - [B72F68472157DDDD369696E1E8A239AF][page2]Page action execution [id=page2] done in 4 ms
+03 Oct 2018 22:42:07,456  INFO [http-bio-8080-exec-5]  (com.webratio.struts.actions.AbstractWRAction:53) - [14ABD2BE42877F7A05CB42D5073CC143][/operation_scu1]Operation action execution [first operation id=scu1] done in 2082 ms
+03 Oct 2018 22:42:07,472  INFO [http-bio-8080-exec-5]  (com.webratio.struts.actions.AbstractWRAction:53) - [14ABD2BE42877F7A05CB42D5073CC143][page2]Page action pre-redirect execution [id=page2] done in 7 ms
+03 Oct 2018 22:42:07,625  INFO [http-bio-8080-exec-7]  (com.webratio.struts.actions.AbstractWRAction:53) - [14ABD2BE42877F7A05CB42D5073CC143][page2]Page action execution [id=page2] done in 149 ms
+03 Oct 2018 22:42:11,257  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [3CC26F7FACB2459FC5963EB20AF786C2][/operation_scu1]Operation action execution [first operation id=scu1] done in 759 ms
+03 Oct 2018 22:42:11,259  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [3CC26F7FACB2459FC5963EB20AF786C2][page2]Page action pre-redirect execution [id=page2] done in 1 ms
+03 Oct 2018 22:42:11,270  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [3CC26F7FACB2459FC5963EB20AF786C2][page2]Page action execution [id=page2] done in 5 ms

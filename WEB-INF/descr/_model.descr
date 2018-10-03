@@ -17,7 +17,7 @@
     <SessionParameter name="UserCtxParam" type="string">UserCtxParam</SessionParameter>
   </SessionParameters>
   <ServiceDataProviders>
-    <CookieStorageProvider id="userCredentials" name="USER_CREDENTIALS" cookieName="USER_CREDENTIALS" encryptionKey="1JE59F8HC8" _sel="t"/>
+    <CookieStorageProvider id="userCredentials" name="USER_CREDENTIALS" cookieName="USER_CREDENTIALS" encryptionKey="1JE5A03EK3" _sel="t"/>
   </ServiceDataProviders>
   <LinkPreservedParameters>
     <LinkPreservedParameter>boxed</LinkPreservedParameter>

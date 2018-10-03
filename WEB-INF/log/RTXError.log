@@ -1,4 +1,4 @@
-03 Oct 2018 22:23:25,758  ERROR [http-bio-8080-exec-5]  (com.webratio.units.utility.rtx.ScriptUnitService:73) - [33738D59395FF8F6780ABEBF29D5A47A][scu1]Unable to execute the script
+03 Oct 2018 22:42:05,432  ERROR [http-bio-8080-exec-5]  (com.webratio.units.utility.rtx.ScriptUnitService:73) - [14ABD2BE42877F7A05CB42D5073CC143][scu1]Unable to execute the script
  java.lang.NullPointerException
 	at com.webratio.commons.transform.groovy.GroovyScript.newInstance(GroovyScript.java:162)
 	at com.webratio.units.utility.rtx.ScriptUnitService.createUnitBean(ScriptUnitService.java:223)
@@ -62,7 +62,7 @@
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-03 Oct 2018 22:23:30,488  ERROR [http-bio-8080-exec-9]  (com.webratio.units.utility.rtx.ScriptUnitService:73) - [B72F68472157DDDD369696E1E8A239AF][scu1]Unable to execute the script
+03 Oct 2018 22:42:10,500  ERROR [http-bio-8080-exec-9]  (com.webratio.units.utility.rtx.ScriptUnitService:73) - [3CC26F7FACB2459FC5963EB20AF786C2][scu1]Unable to execute the script
  java.lang.NullPointerException
 	at com.webratio.commons.transform.groovy.GroovyScript.newInstance(GroovyScript.java:162)
 	at com.webratio.units.utility.rtx.ScriptUnitService.createUnitBean(ScriptUnitService.java:223)

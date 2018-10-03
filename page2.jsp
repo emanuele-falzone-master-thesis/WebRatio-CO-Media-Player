@@ -137,23 +137,6 @@
 	<script src="<webratio:Resource path="BootstrapStyle/dist/js/bootstrap.min.js"/>" data-wr-resname="bootstrap-js"></script>
 	<script src="<webratio:Resource path="BootstrapStyle/js/app.min.js"/>" data-wr-resname="app-js"></script>
 <script>if (typeof wr !== "undefined") { wr.ui.html.resx.refreshLoaded(); }</script>
-	<script src="BootstrapStyle/js/howler.min.js"></script>
-	<script>
-		var sound = '${sound}';
-		var playing = ${playing};
-		var h;
-		$(document).ready(function() {
-			if (playing == true) {
-				h = new Howl({
-					src: [
-							"http://emanuele.falzone.gitlab.io/almostjs-demo-game-data/sounds/" + sound
-					],
-					html5: true
-				});
-				h.play();
-			}
-		});
-	</script>
 	</head>
 <body class="bootstrap-default">
 <a href="#main-content" class="sr-only">Skip to main content</a>
