@@ -177,7 +177,7 @@
 		<div class="plain ">
 			<div class="plain IndexUnit">
 				<div class="table-responsive">
-				<table class="table table-bordered table-hover" id="inu3_0_sortable">
+				<table class="table table-hover" id="inu3_0_sortable">
 					<thead>
 						<tr>
 							<th scope="col" class="">Name</th>
@@ -186,11 +186,9 @@
 				<tbody>
 				<c:forEach var="current" varStatus="status" items="${inu3.data}">
 					<c:set var="index" value="${status.index}"/>	
-						<tr<c:if test="${inu3.currentIndex eq index}"> class="info"</c:if>>	
+						<tr<c:if test="${inu1.currentIndex eq index}"> class="info"</c:if> onclick="window.location='<webratio:Link escapeXml="true" link="ln2" position="index"/>'">
 								<td class=" string">
-											<a href="<webratio:Link escapeXml="true" link="ln2" position="index"/>" class="" onclick="">
 										<c:out value="${current.name}"/>
-											</a>
 								</td>
 						</tr>
 					</c:forEach>
