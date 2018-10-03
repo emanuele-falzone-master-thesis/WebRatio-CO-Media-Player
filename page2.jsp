@@ -212,8 +212,7 @@
 				<div class="value col-md-10"><c:out value="${dau1.data.title}"/></div>
 			</div>
 			<div class="row">
-				<label class="header col-md-2">image</label>
-				<div class="value col-md-10"><c:out value="${dau1.data.image}"/></div>
+				<div class="value col-md-10"><img width="300px" src="http://emanuele.falzone.gitlab.io/almostjs-demo-game-data/images/<c:out value="${dau1.data.image}"/>"></div>
 			</div>
 		</div>
 </div>     
