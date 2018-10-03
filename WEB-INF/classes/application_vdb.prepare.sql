@@ -12,6 +12,7 @@ create table "SONG" (
    "AUTHOR"  varchar,
    "TITLE"  varchar,
    "SOUND"  varchar,
+   "IMAGE"  varchar,
   primary key ("OID")
 );
 

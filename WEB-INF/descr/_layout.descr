@@ -60,4 +60,3 @@ return content + "jquery-ui-timepicker-${language}.js"</ContentScript>
   <Resource name="BUILTIN/jquery-ui"/>
   <Resource name="BUILTIN/jsp-jstl-functions"/>
 </Descriptor>
- 

@@ -4,4 +4,3 @@
   <WebServiceProviders></WebServiceProviders>
   <WebServicesModel tnsURI="" soapVersion="1.1" soapBindingStyle="rcpLiteral"></WebServicesModel>
 </Descriptor>
- 

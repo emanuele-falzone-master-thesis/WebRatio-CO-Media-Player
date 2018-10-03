@@ -9,5 +9,6 @@
     <property name="author" column="`AUTHOR`" type="java.lang.String" unique="false" optimistic-lock="true" lazy="false" generated="never"/>
     <property name="title" column="`TITLE`" type="java.lang.String" unique="false" optimistic-lock="true" lazy="false" generated="never"/>
     <property name="sound" column="`SOUND`" type="java.lang.String" unique="false" optimistic-lock="true" lazy="false" generated="never"/>
+    <property name="image" column="`IMAGE`" type="java.lang.String" unique="false" optimistic-lock="true" lazy="false" generated="never"/>
   </class>
 </hibernate-mapping>

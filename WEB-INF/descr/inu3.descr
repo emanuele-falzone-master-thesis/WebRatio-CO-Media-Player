@@ -9,4 +9,3 @@
     <HQL>select a_author.oid, a_author.name from Author a_author</HQL>
   </Query>
 </Descriptor>
- 

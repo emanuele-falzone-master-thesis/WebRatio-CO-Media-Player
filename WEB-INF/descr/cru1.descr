@@ -9,6 +9,7 @@
   <Field param="cru1.att5" type="string" attribute="att5">author</Field>
   <Field param="cru1.att6" type="string" attribute="att6">title</Field>
   <Field param="cru1.att9" type="string" attribute="att9">sound</Field>
+  <Field param="cru1.att3" type="string" attribute="att3">image</Field>
   <!--Operation Parameter Service-->
   <WRParameterService service="com.webratio.rtx.core.DefaultOperationParameterService">
     <ModelName>Create Songs</ModelName>
@@ -21,6 +22,7 @@
     <LinkIdRequired>true</LinkIdRequired>
     <OperationParams>
       <OperationParam unit="cru1">cru1.att5</OperationParam>
+      <OperationParam unit="cru1">cru1.att3</OperationParam>
       <OperationParam unit="cru1">cru1.att9</OperationParam>
       <OperationParam unit="cru1">cru1.att6</OperationParam>
       <Params/>
@@ -30,4 +32,3 @@
     </OutgoingLinks>
   </WRParameterService>
 </Descriptor>
- 

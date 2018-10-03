@@ -11,10 +11,9 @@
   <EndsTransaction>false</EndsTransaction>
   <StartPageIdRequiredByTarget>false</StartPageIdRequiredByTarget>
   <PreservedContextParams>
-    <Params>acond3|inu3.current.att1|var2</Params>
+    <Params>var2|acond3|inu3.current.att1</Params>
   </PreservedContextParams>
   <ContextPropagations>
     <ContextPropagation targetParam="var2" value="false"/>
   </ContextPropagations>
 </Descriptor>
- 

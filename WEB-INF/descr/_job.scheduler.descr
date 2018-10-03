@@ -8,4 +8,3 @@
   <Property name="org.quartz.jobStore.class" value="org.quartz.simpl.RAMJobStore"/>
   <Property name="org.quartz.scheduler.skipUpdateCheck" value="true"/>
 </Descriptor>
- 

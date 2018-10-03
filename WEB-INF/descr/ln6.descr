@@ -17,4 +17,3 @@
     <ContextPropagation targetParam="var2" value="true"/>
   </ContextPropagations>
 </Descriptor>
- 

@@ -12,6 +12,8 @@ public class Song implements java.io.Serializable {
 
     private java.lang.String _sound;
 
+    private java.lang.String _image;
+
     private float _searchScore;
 
     public java.lang.Integer getOid() {
@@ -46,6 +48,14 @@ public class Song implements java.io.Serializable {
         this._sound = _sound;
     }
 
+    public java.lang.String getImage() {
+        return _image;
+    }
+
+    public void setImage(java.lang.String _image) {
+        this._image = _image;
+    }
+
     public float getSearchScore() {
         return _searchScore;
     }
@@ -71,6 +81,8 @@ public class Song implements java.io.Serializable {
             sb.append("title=" + _title + ',');
         if (_sound != null)
             sb.append("sound=" + _sound + ',');
+        if (_image != null)
+            sb.append("image=" + _image + ',');
         n = sb.length() - 1;
         if (sb.charAt(n) == ',') {
             sb.setCharAt(n, ']');

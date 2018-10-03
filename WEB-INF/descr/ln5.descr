@@ -21,4 +21,3 @@
     <ContextPropagation targetParam="inu1.current.att4" sourceUnit="inu1" sourceParam="data[].att4"/>
   </ContextPropagations>
 </Descriptor>
- 

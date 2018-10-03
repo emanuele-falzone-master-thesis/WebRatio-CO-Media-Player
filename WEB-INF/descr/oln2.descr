@@ -16,6 +16,6 @@
     <ContextPropagation targetParam="cru1.att5" sourceUnit="rfrr1" sourceParam="ResponseBodyParameter$author_name"/>
     <ContextPropagation targetParam="cru1.att9" sourceUnit="rfrr1" sourceParam="ResponseBodyParameter$sound"/>
     <ContextPropagation targetParam="cru1.att6" sourceUnit="rfrr1" sourceParam="ResponseBodyParameter$title"/>
+    <ContextPropagation targetParam="cru1.att3" sourceUnit="rfrr1" sourceParam="ResponseBodyParameter$image"/>
   </ContextPropagations>
 </Descriptor>
- 

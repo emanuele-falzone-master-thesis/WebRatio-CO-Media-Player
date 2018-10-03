@@ -5,9 +5,9 @@
     <Input id="p0" param="kcond2.att4" type="integer" implied="false" expandStyle="in"/>
     <Output id="att4" name="oid" index="0"/>
     <Output id="att6" name="title" index="1"/>
-    <HQL>select a_song.oid, a_song.title from Song a_song
+    <Output id="att3" name="image" index="2"/>
+    <HQL>select a_song.oid, a_song.title, a_song.image from Song a_song
       <Where defaultPolicy="fill" allImplied="false">(({[p0]a_song.oid in(?)}))</Where>
     </HQL>
   </Query>
 </Descriptor>
- 
