@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Descriptor service="com.webratio.rtx.core.DefaultLinkService">
-  <Target>dlu1</Target>
+  <Target>okcu1</Target>
   <Secure>false</Secure>
-  <Source>icu1</Source>
+  <Source>cru3</Source>
   <ReachableAlternativePages></ReachableAlternativePages>
   <Navigates>true</Navigates>
   <StartsTransaction>false</StartsTransaction>
@@ -14,4 +14,3 @@
   </PreservedContextParams>
   <ContextPropagations></ContextPropagations>
 </Descriptor>
- 

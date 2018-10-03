@@ -18,3 +18,4 @@
     <ContextPropagation targetParam="cru1.att6" sourceUnit="rfrr1" sourceParam="ResponseBodyParameter$title"/>
   </ContextPropagations>
 </Descriptor>
+ 

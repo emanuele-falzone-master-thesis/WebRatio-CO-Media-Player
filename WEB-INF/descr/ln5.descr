@@ -11,7 +11,7 @@
   <EndsTransaction>false</EndsTransaction>
   <StartPageIdRequiredByTarget>false</StartPageIdRequiredByTarget>
   <PreservedContextParams>
-    <Params>var2|inu1.current.att4|var1|var3|kcond2.att4</Params>
+    <Params>var2|acond3|inu3.current.att1|inu1.current.att4|var1|var3|kcond2.att4</Params>
   </PreservedContextParams>
   <ContextPropagations>
     <ContextPropagation targetParam="kcond2.att4" sourceUnit="inu1" sourceParam="data[].att4"/>
@@ -21,3 +21,4 @@
     <ContextPropagation targetParam="inu1.current.att4" sourceUnit="inu1" sourceParam="data[].att4"/>
   </ContextPropagations>
 </Descriptor>
+ 

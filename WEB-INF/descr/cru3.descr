@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Descriptor service="com.webratio.units.module.rtx.CollectorUnitService" name="">
-  <Type>INPUT</Type>
+<Descriptor service="com.webratio.units.operation.rtx.db.CreateUnitService" name="Create Authors">
+  <Entity>ent1</Entity>
+  <BulkInsert>true</BulkInsert>
+  <SkipBlankRecords>false</SkipBlankRecords>
+  <DeleteAllBefore/>
+  <Field param="cru3.att1" type="integer" attribute="att1">oid</Field>
+  <Field param="cru3.att2" type="string" attribute="att2">name</Field>
   <!--Operation Parameter Service-->
   <WRParameterService service="com.webratio.rtx.core.DefaultOperationParameterService">
-    <ModelName/>
+    <ModelName>Create Authors</ModelName>
     <ParentContainer>opm1</ParentContainer>
     <NavigationAncestors/>
     <Secure>false</Secure>
@@ -13,12 +18,11 @@
     <StartsTransaction>false</StartsTransaction>
     <LinkIdRequired>true</LinkIdRequired>
     <OperationParams>
+      <OperationParam unit="cru3">cru3.att2</OperationParam>
       <Params/>
     </OperationParams>
     <OutgoingLinks>
-      <Link resultCode="success">oln1</Link>
+      <Link resultCode="success">oln10</Link>
     </OutgoingLinks>
-    <IsLinkHistoryRecorded>true</IsLinkHistoryRecorded>
   </WRParameterService>
 </Descriptor>
- 

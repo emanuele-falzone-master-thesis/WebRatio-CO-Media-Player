@@ -137,26 +137,6 @@
 	<script src="<webratio:Resource path="BootstrapStyle/dist/js/bootstrap.min.js"/>" data-wr-resname="bootstrap-js"></script>
 	<script src="<webratio:Resource path="BootstrapStyle/js/app.min.js"/>" data-wr-resname="app-js"></script>
 <script>if (typeof wr !== "undefined") { wr.ui.html.resx.refreshLoaded(); }</script>
-	<script src="BootstrapStyle/js/howler.min.js"></script>
-	<script>
-		var sound = '${sound}';
-		var playing = ${playing};
-		var h;
-		$(document).ready(function() {
-			if (playing == true) {
-				h = new Howl({
-					src: [
-							"http://emanuele.falzone.gitlab.io/almostjs-demo-game-data/sounds/" + sound
-					],
-					html5: true
-				});
-				h.play();
-				h.on('end', function() {
-					$('#ln7')[0].click();
-				});
-			}
-		});
-	</script>
 	</head>
 <body class="bootstrap-default">
 <a href="#main-content" class="sr-only">Skip to main content</a>
@@ -164,35 +144,58 @@
 		<div <c:if test="${not wrAjax}">id="wr-${wrClientAppName}" data-wr-appid="${wrClientAppName}"</c:if> class="wr-appui wr-appui-${wrClientAppName}">
 	</c:if>
 	<webratio:CollectScripts var="inlineScripts" enabled="${wrBoxed}" eventHandlerWrapper="wr.keepScoped">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="scu1.do">WebRatio</a>
+			</div>
+			<div class="navbar-collapse collapse">		      
+	            <ul class="nav navbar-nav" role="menu">
+	            </ul>
+	            <div class="nav navbar-right user-location">
+	            </div>
+			</div>
+		</div>
+	</nav>
 <div class="container container-fixed-top-padding">
+	<ol class="breadcrumb" aria-label="breadcrumbs">
+		<li class="active">Application</li>
+	</ol>
+	<div class="page-header clearfix">
+			<h1>Application</h1>
+	</div>
 	<div class="row">
 		<div class="col-md-12">
 			<div id="main-content" role="main">
 <div class="container_12">
 				<div class="grid_8 alpha agrd_16">
-<c:if test="${not(empty inu1) and (inu1.dataSize gt 0)}">
+<c:if test="${not(empty inu3) and (inu3.dataSize gt 0)}">
 <div>
-	<h3>Songs</h3>
+	<h3>Authors</h3>
 	<hr/>
 		<div class="plain ">
 			<div class="plain IndexUnit">
 				<div class="table-responsive">
-				<table class="table table-hover" id="inu1_0_sortable">
+				<table class="table table-bordered table-hover" id="inu3_0_sortable">
 					<thead>
 						<tr>
-							<th scope="col" class="">Author</th>
-							<th scope="col" class="">Title</th>
+							<th scope="col" class="">Name</th>
 						</tr>
 					</thead>
 				<tbody>
-				<c:forEach var="current" varStatus="status" items="${inu1.data}">
+				<c:forEach var="current" varStatus="status" items="${inu3.data}">
 					<c:set var="index" value="${status.index}"/>	
-						<tr<c:if test="${inu1.currentIndex eq index}"> class="info"</c:if> onclick="window.location='<webratio:Link escapeXml="true" link="ln5" position="index"/>'"> 	
-								<td class=" string">		
-										<c:out value="${current.author}"/>
-								</td>
+						<tr<c:if test="${inu3.currentIndex eq index}"> class="info"</c:if>>	
 								<td class=" string">
-										<c:out value="${current.title}"/>
+											<a href="<webratio:Link escapeXml="true" link="ln2" position="index"/>" class="" onclick="">
+										<c:out value="${current.name}"/>
+											</a>
 								</td>
 						</tr>
 					</c:forEach>
@@ -253,10 +256,54 @@
 					<div class="clear"></div>
 				</div>
 					<div class="clear"></div>
+				<div class="grid_8 suffix_4 alpha omega agrd_16">
+<c:if test="${not(empty inu1) and (inu1.dataSize gt 0)}">
+<div>
+	<h3>Songs</h3>
+	<hr/>
+		<div class="plain ">
+			<div class="plain IndexUnit">
+				<div class="table-responsive">
+				<table class="table table-bordered table-hover" id="inu1_0_sortable">
+					<thead>
+						<tr>
+							<th scope="col" class="">Author</th>
+							<th scope="col" class="">Title</th>
+						</tr>
+					</thead>
+				<tbody>
+				<c:forEach var="current" varStatus="status" items="${inu1.data}">
+					<c:set var="index" value="${status.index}"/>	
+						<tr<c:if test="${inu1.currentIndex eq index}"> class="info"</c:if>>	
+								<td class=" string">
+											<a href="<webratio:Link escapeXml="true" link="ln5" position="index"/>" class="" onclick="">
+										<c:out value="${current.author}"/>
+											</a>
+								</td>
+								<td class=" string">
+											<a href="<webratio:Link escapeXml="true" link="ln5" position="index"/>" class="" onclick="">
+										<c:out value="${current.title}"/>
+											</a>
+								</td>
+						</tr>
+					</c:forEach>
+					</tbody>
+				</table>
+				</div>
+			</div>
+		</div>
+</div>
+</c:if>
+				</div>
+					<div class="clear"></div>
 </div>
 			</div>
 		</div>
 	</div>
+	<hr class="footer-bar"/>
+	<footer class="copy-footer" role="contentinfo">
+		<p class="text-center">Generated by <a href="http://www.webratio.com" target="_blank" title="High Productivity Web and Mobile App Dev Platform">WebRatio<sup>&reg;</sup></a></p>
+	</footer>
 </div>
 </webratio:CollectScripts>
 <c:if test="${wrBoxed}">

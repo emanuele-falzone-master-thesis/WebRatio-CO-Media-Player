@@ -26,6 +26,10 @@
     <OutgoingRoles>User2Group|User2DefaultGroup</OutgoingRoles>
     <InverseRoles>User2DefaultGroup</InverseRoles>
   </Entity>
+  <Entity id="ent1" name="Author" className="com.webratio.webapp.Author" duration="volatileApplication" database="application_vdb">
+    <Attribute id="att1" key="true" name="oid" fieldName="oid" type="integer" javaType="java.lang.Integer"/>
+    <Attribute id="att2" key="false" name="Name" fieldName="name" type="string" javaType="java.lang.String"/>
+  </Entity>
   <Entity id="ent4" name="Song" className="com.webratio.webapp.Song" duration="volatileApplication" database="application_vdb">
     <Attribute id="att4" key="true" name="oid" fieldName="oid" type="integer" javaType="java.lang.Integer"/>
     <Attribute id="att5" key="false" name="Author" fieldName="author" type="string" javaType="java.lang.String"/>

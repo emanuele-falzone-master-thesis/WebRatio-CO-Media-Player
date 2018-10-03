@@ -3,3 +3,4 @@
 <Descriptor service="com.webratio.rtx.jobs.QuartzJobManagerService">
   <GroupName>WEBRATIO</GroupName>
 </Descriptor>
+ 

@@ -32,5 +32,6 @@
     <property name="show_sql">false</property>
     <property name="format_sql">true</property>
     <mapping resource="com/webratio/webapp/Song.hbm.xml"/>
+    <mapping resource="com/webratio/webapp/Author.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

@@ -13,7 +13,7 @@
     <StartsTransaction>false</StartsTransaction>
     <LinkIdRequired>true</LinkIdRequired>
     <OperationParams>
-      <Params>inu1.current.att4|var3|kcond2.att4|var1|var2</Params>
+      <Params>inu1.current.att4|inu3.current.att1|var3|acond3|kcond2.att4|var1|var2</Params>
     </OperationParams>
     <OutgoingLinks>
       <Link resultCode="success">oln17</Link>

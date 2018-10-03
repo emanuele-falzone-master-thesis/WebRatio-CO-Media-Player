@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Descriptor service="com.webratio.units.ws.rtx.RestFulRequestResponseUnitService" name="Restful Request Response">
-  <Endpoint>http://emanuele.falzone.gitlab.io/almostjs-demo-game-data/songs.json</Endpoint>
-  <RequestMethod>DELETE</RequestMethod>
+  <Endpoint>http://emanuele.falzone.gitlab.io/almostjs-demo-game-data/authors.json</Endpoint>
+  <RequestMethod>GET</RequestMethod>
   <RequestContentType>JSON</RequestContentType>
   <ResponseContentType>JSON</ResponseContentType>
   <RequestHeaders></RequestHeaders>
@@ -10,13 +10,8 @@
   <RequestBodyParameters></RequestBodyParameters>
   <FormDataParameters></FormDataParameters>
   <ResponseBodyParameters>
-    <ResponseBodyParameter id="rrsp1" name="ResponseBodyParameter" minCard="1" maxCard="1" _sel="t" isComplexType="true">
-      <SimpleParameterFragment id="spf1" name="author_name" minCard="1" maxCard="1" _sel="t"/>
-      <SimpleParameterFragment id="spf2" name="title" minCard="1" maxCard="1" _sel="t"/>
-      <SimpleParameterFragment id="spf3" name="author" minCard="1" maxCard="1" _sel="t"/>
-      <SimpleParameterFragment id="spf4" name="genre" minCard="1" maxCard="1" _sel="t"/>
-      <SimpleParameterFragment id="spf5" name="image" minCard="1" maxCard="1" _sel="t"/>
-      <SimpleParameterFragment id="spf6" name="sound" minCard="1" maxCard="1" _sel="t"/>
+    <ResponseBodyParameter id="rrsp3" name="ResponseBodyParameter" minCard="1" maxCard="1" _sel="t" isComplexType="true">
+      <SimpleParameterFragment id="spf13" name="name" minCard="1" maxCard="1" _sel="t"/>
     </ResponseBodyParameter>
   </ResponseBodyParameters>
   <ResponseHeaders></ResponseHeaders>
@@ -39,8 +34,7 @@
       <Params/>
     </OperationParams>
     <OutgoingLinks>
-      <Link resultCode="success">oln2</Link>
+      <Link resultCode="success">oln8</Link>
     </OutgoingLinks>
   </WRParameterService>
 </Descriptor>
- 

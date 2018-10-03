@@ -5,3 +5,4 @@
   <CryptAlgorithm/>
   <LoginQuery>SELECT u.oid, u.password, g.oid, m.moduleID FROM User u LEFT JOIN u.defaultGroup g LEFT JOIN g.defaultModule m WHERE u.userName = :userName</LoginQuery>
 </Descriptor>
+ 

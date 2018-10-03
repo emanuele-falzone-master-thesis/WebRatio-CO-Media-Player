@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Descriptor service="com.webratio.units.operation.rtx.db.DeleteUnitService" name="Delete Songs">
-  <Entity>ent4</Entity>
+<Descriptor service="com.webratio.units.operation.rtx.db.DeleteUnitService" name="Delete Authors">
+  <Entity>ent1</Entity>
   <CascadeDeleteRoles/>
   <FetchMode>HQL</FetchMode>
-  <Query entity="ent4">
-    <Input id="p0" param="acond1" type="integer" implied="false" expandStyle="or" value="-1" attribute="att4"/>
-    <Output id="att4" name="oid" index="0"/>
-    <HQL>select a_song.oid from Song a_song
-      <Where defaultPolicy="fill" allImplied="false">(({[p0]a_song.oid != ?}))</Where>
+  <Query entity="ent1">
+    <Input id="p0" param="acond2" type="integer" implied="false" expandStyle="or" value="-1" attribute="att1"/>
+    <Output id="att1" name="oid" index="0"/>
+    <HQL>select a_author.oid from Author a_author
+      <Where defaultPolicy="fill" allImplied="false">(({[p0]a_author.oid != ?}))</Where>
     </HQL>
   </Query>
   <!--Operation Parameter Service-->
   <WRParameterService service="com.webratio.rtx.core.DefaultOperationParameterService">
-    <ModelName>Delete Songs</ModelName>
+    <ModelName>Delete Authors</ModelName>
     <ParentContainer>opm1</ParentContainer>
     <NavigationAncestors/>
     <Secure>false</Secure>
@@ -25,8 +25,7 @@
       <Params/>
     </OperationParams>
     <OutgoingLinks>
-      <Link resultCode="success">oln4</Link>
+      <Link resultCode="success">oln9</Link>
     </OutgoingLinks>
   </WRParameterService>
 </Descriptor>
- 

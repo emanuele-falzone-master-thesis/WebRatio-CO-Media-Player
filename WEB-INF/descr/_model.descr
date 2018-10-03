@@ -17,13 +17,14 @@
     <SessionParameter name="UserCtxParam" type="string">UserCtxParam</SessionParameter>
   </SessionParameters>
   <ServiceDataProviders>
-    <CookieStorageProvider id="userCredentials" name="USER_CREDENTIALS" cookieName="USER_CREDENTIALS" encryptionKey="1JE5A03EK3" _sel="t"/>
+    <CookieStorageProvider id="userCredentials" name="USER_CREDENTIALS" cookieName="USER_CREDENTIALS" encryptionKey="1JE5AKDE58" _sel="t"/>
   </ServiceDataProviders>
   <LinkPreservedParameters>
     <LinkPreservedParameter>boxed</LinkPreservedParameter>
     <LinkPreservedParameter>fllbck</LinkPreservedParameter>
   </LinkPreservedParameters>
   <DefaultFileEncoding/>
-  <Statistics pages="1" units="10"/>
+  <Statistics pages="1" units="14"/>
   <AutoLoadServices>_i18n|_job.manager</AutoLoadServices>
 </Descriptor>
+ 

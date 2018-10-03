@@ -3,15 +3,18 @@
 <Descriptor service="com.webratio.rtx.core.DefaultLinkService">
   <Target>page2</Target>
   <Secure>false</Secure>
-  <Source>miu5</Source>
+  <Source>inu3</Source>
+  <SourcePage>page2</SourcePage>
   <ReachableAlternativePages></ReachableAlternativePages>
   <Navigates>true</Navigates>
   <StartsTransaction>false</StartsTransaction>
   <EndsTransaction>false</EndsTransaction>
   <StartPageIdRequiredByTarget>false</StartPageIdRequiredByTarget>
   <PreservedContextParams>
-    <Params/>
+    <Params>var2|acond3|inu3.current.att1</Params>
   </PreservedContextParams>
-  <ContextPropagations></ContextPropagations>
+  <ContextPropagations>
+    <ContextPropagation targetParam="acond3" sourceUnit="inu3" sourceParam="data[].att2"/>
+    <ContextPropagation targetParam="inu3.current.att1" sourceUnit="inu3" sourceParam="data[].att1"/>
+  </ContextPropagations>
 </Descriptor>
- 

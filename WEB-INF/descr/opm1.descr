@@ -4,5 +4,5 @@
   <InputCollectorUnit name="" id="icu1"></InputCollectorUnit>
   <OKCollectorUnits>okcu1</OKCollectorUnits>
   <KOCollectorUnits/>
-  <OperationUnits>icu1|rfrr1|cru1|okcu1|dlu1</OperationUnits>
+  <OperationUnits>icu1|rfrr1|cru1|okcu1|dlu1|dlu2|rfrr3|cru3</OperationUnits>
 </Descriptor>

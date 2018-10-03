@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Descriptor service="com.webratio.rtx.core.DefaultLinkService">
-  <Target>dlu1</Target>
+  <Target>cru3</Target>
   <Secure>false</Secure>
-  <Source>icu1</Source>
+  <Source>rfrr3</Source>
   <ReachableAlternativePages></ReachableAlternativePages>
   <Navigates>true</Navigates>
   <StartsTransaction>false</StartsTransaction>
@@ -12,6 +12,7 @@
   <PreservedContextParams>
     <Params/>
   </PreservedContextParams>
-  <ContextPropagations></ContextPropagations>
+  <ContextPropagations>
+    <ContextPropagation targetParam="cru3.att2" sourceUnit="rfrr3" sourceParam="ResponseBodyParameter$name"/>
+  </ContextPropagations>
 </Descriptor>
- 
