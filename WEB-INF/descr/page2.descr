@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.rtx.core.DefaultPageService" name="Application">
+  <ParentContainer>sv1</ParentContainer>
+  <Secure>false</Secure>
+  <Localized>false</Localized>
+  <CheckPermission>false</CheckPermission>
+  <Alternatives/>
+  <ProtectedSubPages/>
+  <Navigations knownEffects="#pr#">
+    <Navigation name="0" nonContextual="true" interPage="always" links="page2"/>
+    <Navigation name="1" nonContextual="true" interPage="always" links="page2.link"/>
+    <Navigation name="2" links="page2.auto-link"/>
+    <Navigation name="3" links="page2.auto-link" selectiveRefresh="true"/>
+    <Navigation name="4" links="ln5"/>
+    <Navigation name="5" links="ln6"/>
+    <Navigation name="6" links="ln7"/>
+    <Navigation name="7" interPage="always" links="scu1.enter|oln18" effects="#pr#"/>
+  </Navigations>
+  <ContextInitServices/>
+  <ContextInits></ContextInits>
+  <UselessPreserves>
+    <UselessPreserve navs="2|6|5|4" effects="-" futile=""/>
+    <UselessPreserve navs="3|2|6|5|4" effects="#pr#" futile=""/>
+    <UselessPreserve navs="3" effects="-" futile="var2"/>
+  </UselessPreserves>
+  <LinkSequence>ln5</LinkSequence>
+  <UnitComputations>
+    <UnitComputation unit="inu1">
+      <NavigationCondition selectiveRefresh="true" effects="#pr#"/>
+    </UnitComputation>
+    <UnitComputation unit="dau1">
+      <NavigationCondition selectiveRefresh="true" effects="#pr#"/>
+    </UnitComputation>
+    <UnitComputation unit="gctu1">
+      <NavigationCondition selectiveRefresh="true" effects="#pr#"/>
+    </UnitComputation>
+  </UnitComputations>
+  <ManualLinks>
+    <ManualLink>ln5</ManualLink>
+    <ManualLink>ln6</ManualLink>
+    <ManualLink>ln7</ManualLink>
+  </ManualLinks>
+  <Variables>
+    <Variable id="var1" name="sound" type="string">
+      <NavigationCondition selectiveRefresh="true" effects="#pr#"/>
+    </Variable>
+    <Variable id="var2" name="playing" type="boolean" value="false">
+      <NavigationCondition selectiveRefresh="true" effects="#pr#"/>
+    </Variable>
+    <Variable id="var3" name="display" type="boolean" value="false">
+      <NavigationCondition selectiveRefresh="true" effects="#pr#"/>
+    </Variable>
+  </Variables>
+  <Conditions>
+    <Condition id="cexpr_var2" name="playing" variables="var2" xml:space="preserve">com.webratio.rtx.core.BeanHelper.asObject(var2)</Condition>
+    <Condition id="cexpr_var3" name="display" variables="var3" xml:space="preserve">com.webratio.rtx.core.BeanHelper.asObject(var3)</Condition>
+    <Condition id="cexpr1" name="PlayActivationExpression" variables="var2" xml:space="preserve">return !playing</Condition>
+    <Condition id="cexpr2" name="StopActivationExpression" variables="var2" xml:space="preserve">return playing</Condition>
+  </Conditions>
+  <Layouts>
+    <Layout id="page2_grid_0">
+      <Layout id="page2_cell_0">
+        <Layout id="inu1_0" unitId="inu1"></Layout>
+      </Layout>
+      <Layout id="page2_cell_8">
+        <Layout id="dau1_0" unitId="dau1"></Layout>
+      </Layout>
+      <Layout id="page2_cell_20">
+        <Layout id="gctu1_0" unitId="gctu1"></Layout>
+      </Layout>
+    </Layout>
+  </Layouts>
+  <AutoLinkInfo>
+    <PreservedContextParams>
+      <Params>var2</Params>
+    </PreservedContextParams>
+    <PreservedContextParams selectiveRefresh="true">
+      <Params>var2</Params>
+    </PreservedContextParams>
+  </AutoLinkInfo>
+  <!--Page Parameter Service-->
+  <WRParameterService service="com.webratio.rtx.core.DefaultPageParameterService">
+    <ModelName>Application</ModelName>
+    <NavigationAncestors>sv1</NavigationAncestors>
+    <LinkIdRequired>true</LinkIdRequired>
+    <PageParams>
+      <PageParam unit="inu1">inu1.current.att4</PageParam>
+      <PageParam unit="dau1">kcond2.att4</PageParam>
+      <PageParam>var1</PageParam>
+      <PageParam>var2</PageParam>
+      <PageParam>var3</PageParam>
+      <PageParam>link</PageParam>
+      <PageParam>nav</PageParam>
+      <PageParam>so</PageParam>
+      <PageParam>ajax</PageParam>
+      <PageParam>ajaxRefresh</PageParam>
+    </PageParams>
+  </WRParameterService>
+</Descriptor>

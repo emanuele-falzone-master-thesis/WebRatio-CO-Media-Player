@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.content.rtx.db.DataUnitService" name="Song">
+  <Query entity="ent4">
+    <Input id="p0" param="kcond2.att4" type="integer" implied="false" expandStyle="in"/>
+    <Output id="att4" name="oid" index="0"/>
+    <Output id="att6" name="title" index="1"/>
+    <HQL>select a_song.oid, a_song.title from Song a_song
+      <Where defaultPolicy="fill" allImplied="false">(({[p0]a_song.oid in(?)}))</Where>
+    </HQL>
+  </Query>
+</Descriptor>

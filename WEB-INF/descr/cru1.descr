@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.operation.rtx.db.CreateUnitService" name="Create Songs">
+  <Entity>ent4</Entity>
+  <BulkInsert>true</BulkInsert>
+  <SkipBlankRecords>false</SkipBlankRecords>
+  <DeleteAllBefore/>
+  <Field param="cru1.att4" type="integer" attribute="att4">oid</Field>
+  <Field param="cru1.att5" type="string" attribute="att5">author</Field>
+  <Field param="cru1.att6" type="string" attribute="att6">title</Field>
+  <Field param="cru1.att9" type="string" attribute="att9">sound</Field>
+  <!--Operation Parameter Service-->
+  <WRParameterService service="com.webratio.rtx.core.DefaultOperationParameterService">
+    <ModelName>Create Songs</ModelName>
+    <ParentContainer>opm1</ParentContainer>
+    <NavigationAncestors/>
+    <Secure>false</Secure>
+    <Localized>false</Localized>
+    <CheckPermission>false</CheckPermission>
+    <StartsTransaction>false</StartsTransaction>
+    <LinkIdRequired>true</LinkIdRequired>
+    <OperationParams>
+      <OperationParam unit="cru1">cru1.att5</OperationParam>
+      <OperationParam unit="cru1">cru1.att9</OperationParam>
+      <OperationParam unit="cru1">cru1.att6</OperationParam>
+      <Params/>
+    </OperationParams>
+    <OutgoingLinks>
+      <Link resultCode="success">oln7</Link>
+    </OutgoingLinks>
+  </WRParameterService>
+</Descriptor>

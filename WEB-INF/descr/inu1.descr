@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.content.rtx.db.IndexUnitService" name="Songs">
+  <UseFirstRowAsDefaultCurrent>true</UseFirstRowAsDefaultCurrent>
+  <MaxResults/>
+  <Query entity="ent4">
+    <Input id="p0" param="acond3" type="string" implied="true" impliedText="1 = 1" expandStyle="in" attribute="att5"/>
+    <Output id="att4" name="oid" index="0"/>
+    <Output id="att9" name="sound" index="1"/>
+    <Output id="att6" name="title" index="2"/>
+    <Output id="att5" name="author" index="3"/>
+    <HQL>select a_song.oid, a_song.sound, a_song.title, a_song.author from Song a_song
+      <Where defaultPolicy="fill" allImplied="true">(({[p0]safe_cast(a_song.author) in(?)}))</Where>order by a_song.oid asc
+    </HQL>
+  </Query>
+</Descriptor>
